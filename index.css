@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root{
+    --greenery: #23856D;
+    --success-color: #2DC071;
+    --green2: #47AD97;
+    --green3: #47AD97;
+    --green4: #39603D;
+    --green5: #176552;
+    --green6: #3C403D;
+    --green7: #0D5C63;
+    --green8: #16697A;
+    --red1: #B73225;
+    --blue0: #00A1C1;
+    --blue1: #004E7C;
+    --blue2: #283747;
+    --blue3: #17213C;
+    --blue4: #14213D;
+    --blue5: #14213D;
+    --peach: #FF7B47;
+    --orange1: #FCA311;
+    --orange2: #FFA62B;
+}
+
+
+.universal-container{
+    /**parent container**/
+}
+
+
+/*****header styling***/
+.top-header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--blue2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    color: white;
+}
+
+.left-top-header{
+    display: flex;
+}
+
+.left-top-header>div{
+    margin: 15px;
+}
+
+
+.top-header-icon{
+    display: flex;
+}
+
+.top-header-icon>div{
+    margin: 4px;
+}
+
+.right-top-header{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons img{
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/***navbar component***/
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+
+
+.left-navbar{
+    display: flex;
+    align-items: center;
+}
+
+.left-navbar>div{
+    margin: 60px;
+}
+
+.nav-links span{
+    display: inline-flex;
+}
+
+.nav-links i{
+    margin: 0 0px;
+    cursor: pointer;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    margin: 5px;
+    color: var(--blue2);
+}
+
+
+.right-navbar{
+    display: flex;
+    align-items: center;
+}
+
+.loginregister span a{
+    color: var(--blue0);
+    text-decoration: none;
+}
+
+.loginregister span{
+    color: var(--blue0);
+}
+
+
+.right-navbar>div{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.right-navbar-wrap-2>div{
+    margin: 10px;
+}
+
+.right-navbar-wrap-1>div{
+    margin: 4px;
+}
+
+.hero-icon sub{
+    position: relative;
+    top: -0.5rem;
+    color: var(--blue0);
+}
+
+.hero-icon img{
+    cursor: pointer;
+}
+
+
+/***home***/
+#home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/home-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

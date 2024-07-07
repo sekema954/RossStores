@@ -6,6 +6,8 @@
     <title>Ross</title>
     <!---index-css-->
     <link rel="stylesheet" href="index.css">
+    <!----responsive stylesheet-->
+    <link rel="stylesheet" href="media.css">
     <!---awesome font CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -56,13 +58,13 @@
             <!---left nav section-->
             <div class="left-navbar">
                 <div class="store-logo">
-                    <h1>Ross</h1>
+                    <h1>Ross Stores</h1>
                 </div>
                 <div class="nav-links">
                     <ul>
                         <li><a href="">Home</a></li>
                         <span><li><a href="">Shop</a></li>
-                            <i class="fa fa-caret-up"></i>
+                            <i class="fa fa-caret-up shop-option-caret"></i>
                         </span>
                         <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -74,7 +76,7 @@
 
             <!---right navbar section-->
             <div class="right-navbar">
-                <div class="right-navbar-wrap-1">
+                <div class="right-navbar-wrap-1 hide-right-navbar">
                     <div class="person-icon right-nav-icon">
                         <img src="images/person-icon.png" alt="icon">
                     </div>
@@ -85,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="right-navbar-wrap-2">
+                <div class="right-navbar-wrap-2 hide-right-navbar">
                     <div class="search-icon">
                         <img src="images/search-icon.png" alt="icon">
                     </div>
@@ -98,12 +100,60 @@
                         <sub>1</sub>
                     </div>
                 </div>
+
+               
             </div>
-            
+            <div class="mobile-navbar-icons">
+                <div class="mobile-search-icon">
+                    <img src="images/mobile-cart-icon.png" alt="icon">
+                </div>
+                <div class="mobile-cart-icon">
+                    <img src="images/mobile-search-icon.png" alt="icon">
+                </div>
+                <div class="menu-bar">
+                    <img src="images/hamburger-icon.png" alt="icon">
+                </div>
+            </div>  
         </nav>
 
-        <section class="home" id="home">
+        <!----DROPDOWN MENU-->
+        <div class="mobile-dropdown-menu">
+            <ul class="mobile-navbar-list">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
 
+        <section class="home" id="home">
+            <!---shop dropdown option-->
+            <div class="shop-option">
+                <ul class="shop-option-links">
+                    <li><a href="shop.html#men">Men</a></li>
+                    <li><a href="shop.html#men">Women</a></li>
+                    <li><a href="shop.html#men">Ladies</a></li>
+                    <li><a href="shop.html#men">Children</a></li>
+                </ul>
+            </div>
+            <div class="home-page-context">
+                <div class="home-page-context-wrapper">
+                    <div class="">
+                        <span>We know how large objects will act,<br>but things on a small scale.</span>
+                    </div>
+                    <div class="">
+                        <p>SUMMER 2020</p>
+                    </div>
+                    <div class="">
+                        <h1>NEW COLLECTION</h1>
+                    </div>
+                    <div class="shop-button-wrap">
+                        <a href="shop.html">
+                            <button class="shop-button">SHOP NOW</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     

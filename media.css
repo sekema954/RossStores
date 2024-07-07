@@ -1,0 +1,47 @@
+@media (max-width:1024px) {
+    /**REDUCE FONT SIZE TO FIT CONTAINER PROPERLY**/
+    .top-header p{
+        font-size: 13px;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .top-header{ /**DISABLE TOP HEADER FOR TABLET DEVICES AND UNDER***/
+        display: none;
+    }
+
+    .nav-links{/***HIDE NAVLINKS FOR TABLET DEVICES AND UNDER***/
+        display: none;
+    }
+    
+    .hide-right-navbar{
+        display: none !important;
+    }
+
+
+    #home{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(images/home-background.jpg);
+        /***POSITION BACKGROUND TO CENTER****/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+    .mobile-navbar-icons{
+        /***make menubar visible for tablets and smaller devices***/
+        display: flex;
+    }
+}
+
+
+
+@media(max-width:320px) {
+    .store-logo h1{ /***REDUCE LOGO FONT SIZE TO FIT SCREEN***/
+        font-size: 16px;
+    }
+}

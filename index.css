@@ -38,6 +38,7 @@
 }
 
 
+
 /*****header styling***/
 .top-header{
     width: 100%;
@@ -92,6 +93,14 @@
     align-items: center;
     padding: 0 20px 0 20px;
     position: relative;
+    z-index: 2000;
+}
+
+/*classlist to set navbar to fixed*/
+.toggleNavbar{
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
 
 
@@ -204,6 +213,12 @@
 /***hide links for shop-options***/
 .shop-option-links{
     display: none;
+}
+
+
+.toggleRotateCaret{
+    transition: all .50s;
+    transform: rotate(180deg);
 }
 
 
@@ -326,3 +341,171 @@
 .toggleMobileLinks{
     display: inline-block;
 }
+
+
+/***next-previous caret buttons***/
+.next-previous-carousel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+
+.caret-button{
+    cursor: pointer;
+}
+
+/***index-indicator***/
+.index-indicator{
+    width: 100%;
+    height: 100%
+}
+
+
+.index-indicator>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.index-in{
+    width: 40px;
+    height: 4px;
+    background: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255,0.4));
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 10%;
+}
+
+
+
+
+/****editors pick***/
+#editors-pick{
+    margin-top: 40px;
+}
+
+.editors-pick-wrapper{
+  width: 100%;
+  height: 65vh;
+  padding: 0 100px 0 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.editors-pick-header-wrapper>div{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+}
+
+
+
+
+.editors-pick-grid {
+    margin-top: 20px;
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 400px 300px 200px;
+    
+    gap: 20px;
+    height: 100%;
+ }
+   
+ .editors-grid-item0 {
+ 
+    background-image: url(images/editors-pick-men.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+
+    position: relative;
+ }
+ 
+ .editors-grid-item1 {
+  
+    background-image: url(images/editors-pick-ladies.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #E9EBBD; 
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+
+    position: relative;
+    
+ }
+ 
+ .editors-grid-item2 {
+    background-image: url(images/editors-pick-accesories.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #DF9FE5; 
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+
+    position: relative;
+    
+ }
+ .editors-grid-item3 {
+    background-image: url(images/editors-pick-kids.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #BE589C; 
+    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+
+    position: relative;
+    
+ }
+
+ .category-button{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+ }
+
+
+ .category-button button {
+     position: relative;
+     height: 40px;
+     background-color: white;
+     cursor: pointer;
+     border: none;
+     font-weight: 700;
+     transition: color 0.4s;
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden; /* Hide overflow to contain the pseudo-element */
+ }
+
+
+ .category-button a{
+    text-decoration: none;
+    color: white;
+ }
+

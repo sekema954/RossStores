@@ -1,5 +1,4 @@
 //show mobile dropdown when menubar is clicked;
-
 function showDropodwn(){
     const dropdownEl = document.querySelector(".mobile-dropdown-menu");
     const mobileNavbarList = document.querySelector(".mobile-navbar-list");
@@ -24,5 +23,24 @@ function caretClicked(){
 
 const shopCaret = document.querySelector(".shop-option-caret");
 shopCaret.addEventListener('click', ()=>{
+    shopCaret.classList.toggle('toggleRotateCaret');
     caretClicked();
 });
+
+
+
+//navbar fixed on window scroll
+function navbarScroll(){
+    const navbar = document.querySelector(".navbar");
+    if(window.scrollY >= 100) {
+        navbar.classList.add("toggleNavbar");
+    } else {
+        navbar.classList.remove("toggleNavbar");
+    }
+
+}
+
+
+window.addEventListener("scroll", ()=>{
+    navbarScroll();
+})

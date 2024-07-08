@@ -36,12 +36,193 @@
         /***make menubar visible for tablets and smaller devices***/
         display: flex;
     }
+
+
+    .editors-pick-grid {
+        margin-top: 20px;
+        display: grid; 
+     
+        /**change grid size**/
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 230px 200px 100px;
+        
+        gap: 20px;
+        height: 100%;
+     }
+
+    .category-button button {
+        position: relative;
+        /**reduce button height*/
+        height: 30px;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        font-weight: 700;
+    
+        /*change font size*/
+        font-size: 10px;
+
+        transition: color 0.4s;
+        /**reduce paddnig**/
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide overflow to contain the pseudo-element */
+    }
+
 }
 
+
+
+
+
+
+
+
+
+@media(max-width:425px) {
+    .next-previous-carousel{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /***reduce the padding space**/
+        padding: 0 10px 0 10px;
+    }
+
+    .caret-button img{
+        cursor: pointer;
+        /**resuce size***/
+        width: 20px;
+        height: 35px;
+    }
+
+    .editors-pick-grid {
+        margin-top: 20px;
+        display: grid; 
+     
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        
+        gap: 20px;
+        height: 100%;
+     }
+    
+
+
+     .editors-grid-item0 {
+        height: 360px;
+        width: 260px;
+        background-image: url(images/editors-pick-men.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row-start: 1;
+        grid-column-start: 1;
+     
+        grid-row-end: 2;
+        grid-column-end: 2;
+    
+        position: relative;
+     }
+
+
+     .editors-grid-item1 {
+        height: 360px;
+        width: 260px;
+  
+        background-image: url(images/editors-pick-ladies.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        background-color: #E9EBBD; 
+        grid-row-start: 2;
+        grid-column-start: 1;
+     
+        grid-row-end: 3;
+        grid-column-end: 2;
+    
+        position: relative;
+        
+     }
+
+
+     .editors-grid-item2{
+        height: 360px;
+        width: 260px;
+
+        background-image: url(images/editors-pick-accesories.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        grid-row-start: 3;
+        grid-column-start: 1;
+     
+        grid-row-end: 4;
+        grid-column-end: 2;
+        
+     }
+     
+     .editors-grid-item3{
+        height: 360px;
+        width: 260px;
+
+        background-image: url(images/editors-pick-kids.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+        grid-row-start: 4;
+        grid-column-start: 1;
+     
+        grid-row-end: 5;
+        grid-column-end: 2;
+        
+     }
+
+
+     .category-button button {
+        position: relative;
+        /**reduce button height*/
+        height: 40px;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        font-weight: 700;
+    
+        /*change font size*/
+        font-size: 15px;
+
+        transition: color 0.4s;
+        /**reduce paddnig**/
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide overflow to contain the pseudo-element */
+    }
+
+
+     
+
+
+  
+    
+}
 
 
 @media(max-width:320px) {
     .store-logo h1{ /***REDUCE LOGO FONT SIZE TO FIT SCREEN***/
         font-size: 16px;
+    }
+
+    .home-page-context-wrapper{
+        position: absolute;
+        /***REDUCE LEFT POSITOIN TO AVOIDE PAGE CONTENT OVERFLOW**/
+        left: 1%;
     }
 }

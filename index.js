@@ -43,4 +43,21 @@ function navbarScroll(){
 
 window.addEventListener("scroll", ()=>{
     navbarScroll();
-})
+});
+
+
+//color picker function
+const colorPickers = document.querySelectorAll(".color-picker");
+const colorBorders = document.querySelectorAll(".color-picker-wrapper");
+
+colorPickers.forEach((picker, index) => {
+    picker.addEventListener("click", () => {
+        colorBorders.forEach((border, eIndex) => {
+            if (index === eIndex) {
+                border.classList.toggle("toggle-color-picker-wrapper");
+            } else {
+                border.classList.remove("toggle-color-picker-wrapper");
+            }
+        });
+    });
+});

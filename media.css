@@ -3,6 +3,19 @@
     .top-header p{
         font-size: 13px;
     }
+
+    /****remove padding to fit small screen**/
+    #featured-products{
+        margin-top: 100px;
+        width: 100vw;
+        padding: 0 50px 0 50px;
+     }
+
+     .neural-universe-grid-1 img{
+        width: 400px;
+        height: 400px;
+     }
+    
 }
 
 
@@ -69,6 +82,21 @@
         justify-content: center;
         align-items: center;
         overflow: hidden; /* Hide overflow to contain the pseudo-element */
+    }
+
+    .neural-universe-grid-1 img{
+        width: 300px;
+        height: 300px;
+     }
+
+     .neural-universe-sub-header h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .vita-item-image img{
+        width: 300px;
+        height: 360px;
     }
 
 }
@@ -206,14 +234,65 @@
         overflow: hidden; /* Hide overflow to contain the pseudo-element */
     }
 
+    .vita-classic-grid{
+        /***ChANGE GRID***/
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        gap: 0px;
+    }
 
-     
+    .neural-universe-grid{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+    }
 
 
-  
+    .neural-universe-grid-1{
+        padding: 10px;
+        order: 1;
+    }
+
+    .neural-universe-flex-buttons{
+        display: inline-block;
+    }
+
+    .buy-now-button{
+        width: 140px;
+        height: 40px;
+            /*change background button color */
+        background-color: var(--blue0);
+        color: white;
+        cursor: pointer;
+        border: none;
+        transition: all .4s;
+        border-radius: 5px;
+    }
     
+
+
+.read-more-button{
+    width: 140px;
+    height: 40px;
+    background-color: transparent;
+    /*change button color */
+    color: var(--blue0);
+    cursor: pointer;
+    border: solid var(--blue0) 1px;
+    transition: all .4s;
+    border-radius: 5px; 
 }
 
+}
+
+
+
+@media(max-width:375px){
+ 
+}
 
 @media(max-width:320px) {
     .store-logo h1{ /***REDUCE LOGO FONT SIZE TO FIT SCREEN***/

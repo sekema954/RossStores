@@ -203,6 +203,7 @@
     justify-content: center;
     align-items: center;
     transition: all .4s;
+    z-index: 300;
 }
 
 
@@ -252,6 +253,7 @@
 .home-page-context-wrapper{
     position: absolute;
     left: 5%;
+    z-index: 200;
 }
 
 .home-page-context-wrapper h1{
@@ -506,13 +508,33 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     position: relative;
      overflow: hidden; /* Hide overflow to contain the pseudo-element */
  }
 
 
+ .editor-button::before{
+    content: '';
+    background-color: var(--green4);
+    position: absolute;
+    transition: all .4s;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 30%;
+ }
+
+ .editor-button:hover::before{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    background-color: var(--blue0);
+ }
+
  .category-button a{
     text-decoration: none;
     color: white;
+    z-index: 300;
  }
 
 
@@ -763,3 +785,253 @@
 .neural-universe-sub-header h1{
     font-size: 40px;
 }
+
+
+
+/**Featured posts section*/
+
+.featured-posts-sub-header p{
+    line-height: 30px;
+}
+
+
+.featured-posts-header-wrapper>div{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.featured-post-header p{
+    color: var(--blue0);
+}
+
+.featured-posts-flex-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-posts-flex{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.featured-posts-card{
+    border: solid black;
+    position: relative;
+    border: solid gray 1px;
+    box-shadow: 0 6px 6px grey; /* Adjust values as needed */
+}
+
+.featured-post-image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.featured-post-image{
+    width: 100%;
+    height: 300px;
+}
+
+.new-tag{
+    position: absolute;
+    background-color: var(--red1);
+    color: white;
+    padding: 5px;
+    left: 4%;
+    top: 4%;
+}
+
+.featured-post-card-tag{
+    margin-top: 10px;
+    display: flex;
+}
+
+
+.featured-post-card-tag ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.featured-post-card-tag ul li a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.bottom-card-context-wrapper{
+    padding: 0 10px 0 10px;
+}
+
+.bottom-card-context-wrapper>div{
+    margin: 15px;
+}
+
+.active-card-tag{
+    color: var(--blue0) !important;
+}
+
+
+.featured-post-card-title p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.date-comments-flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.date-comments-flex>div{
+    text-align: center;
+}
+
+.date-wrapper-flex{
+    display: flex;
+}
+
+.comments-wrapper-flex{
+    display: flex;
+    position: absolute;
+    right: 7%;
+}
+
+.date-wrapper-flex>div, .comments-wrapper-flex>div{
+    margin: 4px;
+}
+
+.learn-more-button-wrapper a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    font-weight: 500;
+    margin: 20px;
+}
+
+
+.learn-more-button-wrapper a img{
+    margin-left: 15px;
+}
+
+
+card-context p{
+    line-height: 30px;
+}
+
+
+
+/***social -link footer***/
+
+
+.social-links-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+    padding: 60px 160px 60px 160px;
+    margin-top: 40px;
+}
+
+
+.right-social-links-footer-flex{
+    display: flex;
+}
+
+.right-social-links-footer-flex>div{
+    margin:10px;
+}
+
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;
+}
+
+.footer-title{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title h4{
+    margin: 20px 0;
+}
+
+footer ul li{
+    list-style: none;
+    margin: 15px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;   
+    position: relative;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li a::before{
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background-color: var(--blue0);
+    transition: all .5s;
+}
+
+
+footer ul li a:hover::before{
+    content: "";
+    width: 60%;
+}
+
+
+
+
+.rights-reserved-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #FAFAFA;
+}
+
+
+footer input{
+    height: 35px;
+    padding: 15px;
+}
+
+footer button{
+    background-color: var(--blue0);
+    color: white;
+    height: 35px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+
+footer button:hover{
+    background-color: var(--blue1);
+}
+

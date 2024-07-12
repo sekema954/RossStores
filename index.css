@@ -1172,3 +1172,139 @@ footer button:hover{
     justify-content: center;
 }
 
+
+
+
+/**video card*/
+
+#video-card{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+}
+
+#video-card img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 60px 150px 60px 150px;
+}
+
+
+
+/***meet the team***/
+
+
+.team-header-wrapper>div{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+.team-members-flex-box{
+    padding: 0 60px 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+
+
+.team-member-card{
+    width: fit-content;
+}
+
+
+.team-member-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.team-info>div{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.team-social-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.team-social-links ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.team-social-links ul li a{
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.team-info{
+    margin-top: 15px;
+}
+
+
+
+/***desktop testimoials**/
+
+#desktop-testimonials{
+    background-color: #2A7CC7;
+}
+
+.desktop-testimonial-grid{
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    gap: 0;
+}
+
+
+.desktop-testimonials-grid-context{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-btn button{
+    width: 120px;
+    height: 40px;
+    border: solid white 1px;
+    border-radius: 4px;
+    color: wheat;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+
+.testimonials-btn button:hover{
+    background-color: white;
+    color: black;
+}
+
+.testimonials-grid-1-header-wrapper>div{
+    margin: 25px;
+    color: white;
+}
+
+
+.testimonials-title h1{
+    font-size: 35px;
+}
+
+
+.testimonials-image img{
+    float: right;
+}

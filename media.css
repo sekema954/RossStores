@@ -75,6 +75,29 @@
         justify-content: center;
         font-size: 30px;
     }
+
+    #video-card img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 60px 80px 60px 80px;
+    }
+
+
+    #team{
+        min-height: 100vh;
+    }
+
+    .team-members-flex-box{
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 25px;
+    }
+
+
 }
 
 
@@ -193,6 +216,15 @@
 
     .metrics-col p{
         font-size: 10px;
+    }
+
+    .team-members-flex-box{
+        padding: 0 60px 0 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 25px;
     }
 
 }
@@ -456,10 +488,43 @@
         align-items: center;
         justify-content: center;
     }
+
+    #video-card img{
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
     
 
+
+    .team-members-flex-box{
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 25px;
+    }
+
+
+    .about-container footer{
+        margin-top: 40px;
+    }
+
+
+    .testimonials-image{
+        float: right;
+        display: none;
+    }
     
-    
+
+
+.desktop-testimonial-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 }
 
@@ -474,6 +539,7 @@
         padding: 30px;
         margin-top: 40px;
     }
+
 }
 
 @media(max-width:320px) {

@@ -21,7 +21,7 @@
     --green7: #0D5C63;
     --green8: #16697A;
     --red1: #B73225;
-    --blue0: #00A1C1;
+    --blue0: #23A6F0;
     --blue1: #004E7C;
     --blue2: #283747;
     --blue3: #17213C;
@@ -351,15 +351,18 @@
 
 
 /***next-previous caret buttons***/
-.next-previous-carousel{
-    width: 100%;
-    height: 100%;
+.next-caret{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px 0 10px;
+    right: 2%;
+    top: 50%;
 }
+
+.previous-caret{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+
 
 .caret-button{
     cursor: pointer;
@@ -367,24 +370,26 @@
 
 /***index-indicator***/
 .index-indicator{
-    width: 100%;
-    height: 100%;
+    display: flex;
     position: absolute;
-    justify-content: center;
+    bottom: 15%;
+    left: 50%;
 }
 
 
 
 .index-in{
-    width: 40px;
-    height: 4px;
-    background: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255,0.4));
-    backdrop-filter: blur(10px);
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
+   width: 30px;
+   height: 4px;
+   background: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.4));
+   backdrop-filter: blur(10px);
+   margin: 4px;
 }
 
+
+.active-index-indicator{
+    background-color: white;
+}
 
 
 
@@ -591,6 +596,7 @@
 
 .retail-price{
     color: grey;
+    text-decoration: line-through;
 }
 
 .discount-price{
@@ -651,8 +657,8 @@
 
 #vita-classic{
     background-color: var(--greenery);
-    width: 100%;
     margin-top: 30px;
+    position: relative;
 }
 
 
@@ -762,7 +768,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    left: 60px;
+    left: px;
 }
 
 
@@ -991,7 +997,7 @@ footer ul li a::before{
     width: 0;
     height: 4px;
     position: absolute;
-    left: 0;
+    left: 20%;
     top: 20px;
     background-color: var(--blue0);
     transition: all .5s;
@@ -1033,5 +1039,136 @@ footer button{
 
 footer button:hover{
     background-color: var(--blue1);
+}
+
+
+
+/***about***/
+
+.login-become-member ul li{
+    list-style: none;
+    display: inline-block
+}
+
+.login-become-member ul li a{
+    text-decoration: none;
+    margin: 30px;
+    color: var(--blue0);
+} 
+
+
+.about-container .navbar{
+    padding: 0 100px 0 100px;
+}
+
+.login-become-member a{
+    text-decoration: none;
+}
+
+
+.become-member-button{
+    padding: 10px;
+    color: white;
+    background-color: var(--blue0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.become-member-button:hover{
+    background-color: var(--blue1);
+}
+
+
+#about-us{
+    width: 100vw;
+    height: 100svh;
+    background-image: url(images/about-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.about-us-context-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+}
+
+.quote-now-btn button{
+    background-color: var(--blue0);
+    border: none;
+    width: 140px;
+    border-radius: 4px;
+    height: 40px;
+    color: white;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.quote-now-btn button:hover{
+    background-color: var(--blue1);
+}
+
+
+.about-us-header-wrapper>div{
+    margin: 30px 0px;
+}
+
+.about-us-header-title h1{
+    font-size: 40px;
+}
+
+#problems-trying{
+    height: 30vh;
+    padding: 0 100px 0 100px;
+}
+
+.problem-trying-header p{
+    color: red;
+}
+
+.problem-trying-context-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.problem-trying-align-center{
+    display: flex;
+    align-items: center;
+}
+
+
+/***metric***/
+
+#metrics{
+    padding: 0 80px 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metrics-wrapper-space-between{
+    display: flex;
+    justify-content: space-between;
+    gap: 170px;
+}
+
+
+.metrics-number{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.metrics-col>div{
+    display: flex;
+    justify-content: center;
 }
 

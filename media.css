@@ -98,6 +98,16 @@
     }
 
 
+
+    .company-icons-flex-wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+
 }
 
 
@@ -226,6 +236,42 @@
         gap: 50px;
         margin-top: 25px;
     }
+
+
+
+
+    .pricing-cards-wrapper{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100%;
+        gap: 0;
+    }
+
+
+    .company-icons-flex-wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+
+    .company-icons-flex-wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px 0 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+  
 
 }
 
@@ -526,6 +572,21 @@
     align-items: center;
 }
 
+
+.support-cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+footer form input, footer form button{
+    margin: 5px;
+}
+
 }
 
 
@@ -555,6 +616,27 @@
 
     .featured-posts-flex{
         padding: 0 5px 0 5px;
+    }
+
+
+    .subscription-card{
+        width: 100%;
+        height: 540px;
+        border: solid var(--blue0) 1px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+
+    .try-free-btn button{
+        width: 250px;
+        height: 35px;
+        background-color: black;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: all .5s;
     }
 
 

@@ -1652,3 +1652,58 @@ footer button:hover{
     color: var(--blue0);
     border: solid var(--blue0) 1px;
 }
+
+
+
+/****product-section***/
+
+.product-container .top-header{
+    background-color: var(--greenery);
+}
+
+.shop-navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px 0 200px;
+    margin-top: 40px;
+}
+
+
+.shop-filter{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 5px 0 5px;
+}
+
+
+
+.shop-filter-card img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.page-number{
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    align-items: center;
+}
+
+.next-page, .previous-page{
+    width: 80px !important;
+    height: 50px;
+}
+
+
+
+
+.page-number button{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+    border: solid black 1px;
+}

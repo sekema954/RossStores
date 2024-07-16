@@ -271,6 +271,14 @@
     }
 
 
+    .shop-navigation{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px 0 30px;
+        margin-top: 40px;
+    }
+
+
   
 
 }
@@ -578,6 +586,33 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+
+.shop-title h1{
+    font-size: 15px;
+}
+
+.pricing-navigation p {
+    font-size: 15px;
+}
+
+.pricing-navigation span{
+    margin: 2px;
+}
+
+
+.page-number button{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    border: solid black 1px;
+}
+
+.next-page, .previous-page{
+    width: 50px !important;
+    height: 30px;
 }
 
 
